@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [#211](https://github.com/nf-core/hlatyping/pull/211) - Replace local HLA\*LA modules with nf-core community modules `hlala/typing`, `hlala/preparegraph`, `wget`, and `untar`; checksum validation moved to the workflow (@jonasscheid)
 - [#211](https://github.com/nf-core/hlatyping/pull/211) - Clean up published output by disabling publishing for intermediate processes (CHECK_PAIRED, YARA_INDEX, YARA_MAPPER, SAMTOOLS_VIEW, SAMTOOLS_COLLATEFASTQ, HLAHD_INSTALL, WGET, UNTAR, HLALA_PREPAREGRAPH) (@jonasscheid)
 - [#218](https://github.com/nf-core/hlatyping/pull/218) - Merge nf-core template updates up to `4.0.2` (@jonasscheid)
+- [#TBD](https://github.com/nf-core/hlatyping/pull/TBD) - Update OptiType HLA reference data to IPD-IMGT/HLA 3.63.1 (was ~3.14 era). FASTAs trimmed to OptiType's exons 2+3 typing window (DNA: intron1+exon2+intron2+exon3+intron3; RNA: exons 2+3 spliced), matching the historical upstream-OptiType-v1.3.5 layout. `alleles.h5` shrunk by ~80 MB by storing only `table` + `features` (the tables OptiType actually reads). Reference provenance recorded in `assets/software_meta.json`. Net data/references/ size: ~-54 MB (@jonasscheid)
 
 ### `Fixed`
 
